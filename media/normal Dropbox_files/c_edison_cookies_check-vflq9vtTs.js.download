@@ -1,0 +1,5 @@
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new e.Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="bb30cee8-c767-3a7f-b301-524714b543a2")}catch(e){}}();
+define(["exports","./c_core_notify","./c_www_auth_csrf","./c_core_i18n","react-dom","react","./c_chat_chat_constants","./e_core_exception","./c_src_sink_index","./c_init_data_debug_panel","./c_lodash-es_lodash","metaserver/static/js/langpack","./c_init_data_edison"],(function(e,t,s,c,i,n,a,o,r,_,d,l,f){"use strict";e.ensureCookiesAreEnabled=function(){return!!s.Cookies.are_enabled()||(window===window.top&&t.require_css("/static/metaserver/static/css/notify-vflPup1uz.css").then((()=>{t.Notify.error(c.intl.formatMessage({id:"G39vbK",defaultMessage:"Unable to access strictly necessary cookies. The website might not function correctly."}))})),!1)}}));
+//# sourceMappingURL=c_edison_cookies_check.js-vfltG8zvz.map
+
+//# debugId=bb30cee8-c767-3a7f-b301-524714b543a2

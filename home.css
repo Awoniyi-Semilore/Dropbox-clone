@@ -1,0 +1,221 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Atlas Grotesk Web", sans-serif;
+}
+.header{
+    background-color: #DEEBFF;
+    padding: 16px 24px;
+    text-align: center;
+}
+.header1 a{
+    color: #0c0d0f;
+    font-size: 14px;
+    font-style: normal;
+    line-height: 120%;
+    font-weight:500; 
+    text-decoration: none;
+    border-bottom: 1px solid #023d9b; /* initial underline */
+    /* display: inline-flex; needed for arrow later */
+    /* align-items: center; center text and arrow vertically */
+    /* gap: 4px; gap between text and arrow */
+    /* transition: gap 0.3s ease, text-decoration 0.3s ease;
+}
+.header1 a:hover {
+    border-bottom: none;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.arrow {
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+.header1 a:hover .arrow {
+    transform: translateX(4px); moves the arrow 4px to the right */
+  /* } */ 
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif; /* fallback if Atlas doesn't load */
+  }
+  
+  .header1 {
+    background-color: #DEEBFF;
+    padding: 16px 24px;
+    text-align: center;
+  }
+  
+  .header1 a {
+    color: #0044af;
+    font-size: 14px;
+    font-style: normal;
+    line-height: 120%;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    text-decoration-thickness: 1px;
+    text-decoration-skip-ink: none;
+    text-wrap: pretty;
+    text-underline-position: under;
+    overflow-wrap: break-word;
+    transition: gap 0.3s ease, border-bottom 0.3s ease;
+  }
+  
+  .header1 a:hover {
+    text-decoration: none;
+    gap: 8px;
+    cursor: pointer;
+  }
+  
+  /* Text only */
+  .text {
+    display: inline;
+  }
+  
+  /* Arrow styling */
+  .arrow {
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Move arrow when hover */
+  .header1 a:hover .arrow {
+    transform: translateX(4px);
+  }
+  
+  /* SVG inside arrow should not stretch weirdly */
+  .arrow svg {
+    display: block;
+  }
+  
+
+.section1{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000000CC;
+  padding: 24px;
+}
+.section1-left{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.section1-left a{
+  padding: 0 10px;
+  text-decoration: none;
+  color:rgb(255, 255, 255);
+  font-size: 14px;
+  font-weight: 900;
+}
+.main-logo{
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.main-logo h2{
+  color: #F7F5F2;
+  font-size: 24px;
+  padding-left: 10px;
+}
+.header2-right{
+  display: flex;
+  align-items: center;
+}
+.header2-right a{
+  text-decoration: none;
+  color: #F7F5F2;
+  padding: 0 12px;
+  font-size: 14px;
+}
+.header2-right p{
+  text-decoration: none;
+  color: #F7F5F2;
+  padding: 0 12px;
+  font-size: 14px;
+}
+.design{
+  background-color: #F7F5F2;
+  color: #1E1919;
+  padding: 10px 18px;
+  border-radius: 10px;
+  font-size: 16px;
+  margin-right: 0;
+}
+.burger{
+  display: none;
+  padding-left: 12px;
+}
+.hover:hover{
+  cursor: pointer;
+  color: blue;
+}
+.left-hover:hover{
+  cursor: pointer;
+  color: blue;
+}
+.img-hover{
+  cursor:pointer;
+  padding-right: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1115px){
+  .left-hover{
+    display: none;
+  }
+  .burger{
+    display: block;
+  }
+  .header2-right a{
+    padding: 0 15px;
+  }
+  .img-hover{
+    padding-right: 15px;
+  }
+  .burger{
+    padding-left: 15px;
+  }
+}
+@media (max-width: 768px){
+  .get{
+    display: none;
+  }
+  .section1{
+    padding: 0 ;
+  }
+  .section1-left a{
+    padding: 0;
+  }
+  .burger{
+    padding-right: 15px;
+  }
+  .header1 {
+    padding: 20px 24px;
+  }
+}
+@media (max-width: 480px){
+  .img-hover{
+    display: none;
+  }
+  .main-logo h2{
+    display: none;
+  }
+}

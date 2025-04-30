@@ -1,0 +1,5 @@
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new e.Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="a77ad386-645a-3382-ba7f-691cb68f7dcf")}catch(e){}}();
+define(["exports","./c_api_v2_unauthed_client","./e_warp_warp_page_edison"],(function(e,r,i){"use strict";class s extends r.ApiV2ClientBase{constructor(e){super(e),this.userProperties=i.getActiveUserApiV2Properties()}_headers(e){return this.userProperties?{[r.ApiV2HeaderNames.DropboxUid]:String(this.userProperties.id),[r.ApiV2HeaderNames.DropboxPathRoot]:String(this.userProperties.root_ns_id),...e.headers}:{[r.ApiV2HeaderNames.DropboxUid]:String(-1),...e.headers}}}e.ActiveUserApiV2Client=s}));
+//# sourceMappingURL=c_api_v2_active_user_client.js-vflbRpmJP.map
+
+//# debugId=a77ad386-645a-3382-ba7f-691cb68f7dcf

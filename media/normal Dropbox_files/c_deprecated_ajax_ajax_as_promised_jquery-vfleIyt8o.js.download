@@ -1,0 +1,5 @@
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new e.Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="6ef3fb14-4eba-32e0-be59-ddc3d5572471")}catch(e){}}();
+define(["exports","./c_deprecated_ajax_ajax_jquery"],(function(e,s){"use strict";function t(e){return t=>new Promise(((r,o)=>{const u=e({...t,success:(e,s,o)=>{t.success&&t.success(e,s,o),r(e)},error:(e,s,u)=>{t.error&&t.error(e,s,u),200===e.status?(t.success&&t.success(e.responseText,"success",e),r(e.responseText)):o({jqXHR:e,textStatus:s,errorThrown:u})}});if(t.signal){const e=()=>{const e=s.getFakeJQXHR();e.readyState=XMLHttpRequest.DONE,e.responseText="Aborted",e.status=500,e.statusText="abort",u.abort(),o({jqXHR:e,textStatus:"aborted",errorThrown:"Aborted"})};t.signal.aborted?e():t.signal.addEventListener("abort",e)}}))}const r=t(s.BackgroundRequest),o=t(s.WebRequest),u=t(s.FormWebRequest);e.BackgroundRequest=r,e.FormWebRequest=u,e.WebRequest=o}));
+//# sourceMappingURL=c_deprecated_ajax_ajax_as_promised_jquery.js-vflOBnmIK.map
+
+//# debugId=6ef3fb14-4eba-32e0-be59-ddc3d5572471
